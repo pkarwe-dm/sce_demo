@@ -292,7 +292,7 @@ def run(gis_un, gis_pw, client_id, client_secret):
 
     # check to see if a layer already exists, if so update, else create
     # can alternatively save layer item ids to a store then reference
-    item = Item(gis, '85b790babb674c3391052c258fdd00ed')
+    item = Item(gis, 'fcd1dad0687741ae87bac9966fa727e1')
     lyr = item.layers[0]
     delete_before_days(lyr,30,'event_time') #delete old features
     logging.info('Updating existing layer {0} with {1} alerts'.format(item.id, len(alerts)))
